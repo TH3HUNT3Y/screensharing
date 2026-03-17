@@ -1,4 +1,4 @@
-$inputText = Read-Host "Enter text"
+$inputText = Read-Host "Enter ocean pin"
 $url = "https://anticheat.ac/dl/ocean/$inputText"
 $tempFile = "$env:TEMP\$inputText.exe"
 Invoke-WebRequest -Uri $url -OutFile $tempFile
